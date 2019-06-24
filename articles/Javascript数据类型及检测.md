@@ -1,7 +1,7 @@
 JavaScript有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有1种复杂数据类型：Object。
 
 
-#### 判断数组
+### 判断数组
 ~~~
 function isArray( value ){
 	return Object.prototype.toString.call(value) === '[object Array]'
@@ -15,7 +15,7 @@ isArray([]); //true
 isArray(new Array(2)); //true
 ~~~
 
-#### 判断函数
+### 判断函数
 ~~~
 function isFunction( value ){
 	return typeof value === 'function';
@@ -28,7 +28,7 @@ function isFunction( value ){
 isFunction(function(){}); //true
 ~~~
 
-#### 判断对象
+### 判断对象
 ~~~
 function isObject( value ){
 	return value != null && ( typeof value === 'object' || typeof value === 'function' )
@@ -68,7 +68,7 @@ isEmptyObject(null); //true
 ~~~
 
 
-#### 判断数字
+### 判断数字
 ~~~
 function isNumber( value ){
 	return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
@@ -126,7 +126,7 @@ isSafeInteger(42); //true
 isSafeInteger(9007199254740992);//false
 ~~~
 
-#### 判断日期
+### 判断日期
 ~~~
 function isDate( value ){
 	return Object.prototype.toString.call(value) === '[object Date]'
@@ -135,7 +135,7 @@ function isDate( value ){
 isDate(new Date()); //true
 ~~~
 
-#### 判断字符串
+### 判断字符串
 ~~~
 function isString( value ){
 	return typeof value === 'string';
@@ -149,7 +149,7 @@ isString('12'); //true
 isString(12); //false
 ~~~
 
-#### 判断正则
+### 判断正则
 ~~~
 function isRegExp( value ){
 	return Object.prototype.toString.call(value) === '[object RegExp]'
