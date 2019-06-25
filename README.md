@@ -22,3 +22,9 @@
 - [Javascript编程之实现自定义事件接口](https://github.com/pengjielee/blog/issues/17)  
 - [Javascript编程之并行与串行](https://github.com/pengjielee/blog/issues/18)  
 - [Javascript编程之程序输出](https://github.com/pengjielee/blog/issues/19)  
+
+## Javascript设计模式
+
+- [Javascript设计模式之单例模式](https://github.com/pengjielee/blog/issues/20)  
+- [Javascript设计模式之工厂模式](https://github.com/pengjielee/blog/issues/21)  
+- [Javascript设计模式之观察者模式](https://github.com/pengjielee/blog/issues/22)  
