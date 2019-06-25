@@ -15,6 +15,11 @@
 - [Javascript比较slice和splice](https://github.com/pengjielee/blog/issues/13) 
 - [Javascript比较substr和substring](https://github.com/pengjielee/blog/issues/14) 
 
+## Javascript进阶
+
+- [Javascript进阶之浅拷贝和深拷贝](https://github.com/pengjielee/blog/issues/28)  
+- [Javascript进阶之函数防抖和节流](https://github.com/pengjielee/blog/issues/29)  
+
 ## Javascript编程
 
 - [Javascript编程之map与parseInt](https://github.com/pengjielee/blog/issues/15)  
