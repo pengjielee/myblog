@@ -1,55 +1,150 @@
-观察者模式，又叫发布者-订阅者模式 。
-
-观察者模式可以很好的实现两个模块之间的解耦。 
-
-好莱坞有句名言。“不要给我打电话， 我会给你打电话”.  其中“我”是发布者， “你”是订阅者。
-
-我来公司面试的时候，完事之后每个面试官都会对我说：“请留下你的联系方式， 有消息我们会通知你”。 在这里“我”是订阅者， 面试官是发布者。
-
-观察者模式实现：面试者把简历扔到一个盒子里， 然后面试官在合适的时机拿着盒子里的简历挨个打电话通知结果.
+被观察者：维护一组观察者，提供用于增加和移除观察者的方法。
+观察者：提供一个更新接口，用于当被观察者状态变化时，得到通知。
+具体的被观察者：状态变化时广播通知给观察者，保持具体的观察者的信息。
+具体的观察者：保持一个指向具体被观察者的引用，实现一个更新接口，用于观察，以便保证自身状态总是和被观察者状态一致的。
 
 ~~~
-Events = function() {
- 
-    var listen, log, obj, one, remove, trigger, __this;
-    obj = {};
-    __this = this;
- 
-    listen = function( key, eventfn ) {  
-      //把简历扔盒子, key就是联系方式.
-      var stack, _ref;  
-      //stack是盒子
-      stack = ( _ref = obj[key] ) != null ? _ref : obj[ key ] = [];
-      return stack.push( eventfn );
-    };
- 
-    one = function( key, eventfn ) {
-      remove( key );
-      return listen( key, eventfn );
-    };
+// 观察者列表  
+function ObserverList(){
+  this.observerList = [];
+}
 
-    remove = function( key ) {
-      var _ref;
-      return ( _ref = obj[key] ) != null ? _ref.length = 0 : void 0;
-    };
+ObserverList.prototype.Add = function( obj ){
+  return this.observerList.push( obj );
+};
 
-    trigger = function() {  
-         //面试官打电话通知面试者
-         var fn, stack, _i, _len, _ref, key;
-         key = Array.prototype.shift.call( arguments );
-         stack = ( _ref = obj[ key ] ) != null ? _ref : obj[ key ] = [];
-         for ( _i = 0, _len = stack.length; _i < _len; _i++ ) {
-               fn = stack[ _i ];
-               if ( fn.apply( __this,  arguments ) === false) {
-                 return false;
-               }
-         }
-         return {
-            listen: listen,
-            one: one,
-            remove: remove,
-            trigger: trigger
-         }
-    };
+ObserverList.prototype.Empty = function(){
+  this.observerList = [];
+};
+
+ObserverList.prototype.Count = function(){
+  return this.observerList.length;
+};
+
+ObserverList.prototype.Get = function( index ){
+  if( index > -1 && index < this.observerList.length ){
+    return this.observerList[ index ];
+  }
+};
+
+ObserverList.prototype.Insert = function( obj, index ){
+  var pointer = -1;
+
+  if( index === 0 ){
+    this.observerList.unshift( obj );
+    pointer = index;
+  }else if( index === this.observerList.length ){
+    this.observerList.push( obj );
+    pointer = index;
+  }
+
+  return pointer;
+};
+
+ObserverList.prototype.IndexOf = function( obj, startIndex ){
+  var i = startIndex, pointer = -1;
+
+  while( i < this.observerList.length ){
+    if( this.observerList[i] === obj ){
+      pointer = i;
+    }
+    i++;
+  }
+
+  return pointer;
+};
+
+ObserverList.prototype.RemoveAt = function( index ){
+  if( index === 0 ){
+    this.observerList.shift();
+  }else if( index === this.observerList.length -1 ){
+    this.observerList.pop();
+  }
+};
+
+// Extend an object with an extension
+function extend( extension, obj ){
+  for ( var key in extension ){
+    obj[key] = extension[key];
+  }
+}
+
+// 被观察者
+function Subject(){
+  this.observers = new ObserverList();
+}
+
+Subject.prototype.AddObserver = function( observer ){
+  this.observers.Add( observer );
+}; 
+
+Subject.prototype.RemoveObserver = function( observer ){
+  this.observers.RemoveAt( this.observers.IndexOf( observer, 0 ) );
+}; 
+
+Subject.prototype.Notify = function( context ){
+  var observerCount = this.observers.Count();
+  for(var i=0; i < observerCount; i++){
+    this.observers.Get(i).Update( context );
+  }
+};
+
+// 观察者  
+function Observer(){
+  this.Update = function(){
+
+  }
 }
 ~~~
+
+## 应用
+~~~
+<div id="app">
+  <div>
+    <input id="mainCheckbox" type="checkbox"/> 通知
+  </div>
+
+  <button id="addNewObserver">Add New Observer checkbox</button>
+  
+  <div id="observersContainer" class="observes"></div>
+</div>
+
+<script type="text/javascript">
+var controlCheckbox = document.getElementById( "mainCheckbox" ),
+  addBtn = document.getElementById( "addNewObserver" ),
+  container = document.getElementById( "observersContainer" );
+
+// 具体的被观察者
+
+//Subject 类扩展controlCheckbox 类
+extend( new Subject(), controlCheckbox );
+
+//点击checkbox 将会触发对观察者的通知
+controlCheckbox["onclick"] = new Function( "controlCheckbox.Notify(controlCheckbox.checked)" );
+
+addBtn["onclick"] = AddNewObserver;
+
+// 具体的观察者
+function AddNewObserver(){
+  //建立一个新的用于增加的checkbox
+  var check  = document.createElement( "input" );
+  check.type = "checkbox";
+
+  // 使用Observer 类扩展checkbox
+  extend( new Observer(), check );
+
+  // 使用定制的Update函数重载
+  check.Update = function( value ){
+    this.checked = value;
+  };
+
+  // 增加新的观察者到我们主要的被观察者的观察者列表中
+  controlCheckbox.AddObserver( check );
+
+  // 将元素添加到容器的最后
+  container.appendChild( check );
+}
+</script>
+~~~
+
+
