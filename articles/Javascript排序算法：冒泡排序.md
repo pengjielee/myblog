@@ -63,6 +63,108 @@ var num = [3,8,10,4,2];
 console.log(num.bubbleSort());
 ~~~
 
+~~~
+function BubbleSort1(arr){
+  var i, j, temp;
+
+  for(i = 0; i < arr.length - 1; i++){
+    for(j = 0; j < arr.length - 1; j++){
+      if(arr[j] > arr[j+1]){
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+      console.log(i+':'+j);
+      console.log(arr);
+    }
+    console.log(i);
+    console.log(arr);
+    console.log('-------------')
+  }
+  
+  return arr;
+}
+var arr = [ 5,9,8,2,4]
+var result = BubbleSort1(arr); 
+
+
+function BubbleSort2(arr){
+  var i, j, temp;
+
+  for(i = 0; i < arr.length - 1; i++){
+    for(j = 0; j < arr.length - i - 1; j++){
+      if(arr[j] > arr[j+1]){
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+      console.log(i+':'+j);
+      console.log(arr);
+    }
+    console.log(i);
+    console.log(arr);
+    console.log('-------------')
+  }
+  
+  return arr;
+}
+var arr = [ 5,9,8,2,4]
+var result = BubbleSort2(arr);
+
+
+function BubbleSort3(arr){
+  var i, j, temp;
+
+  for(i = arr.length; i > 0; i--){
+    for(j = 0; j < i - 1; j++){
+      if(arr[j] > arr[j+1]){
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+      console.log(i+':'+j);
+      console.log(arr);
+    }
+    console.log(i);
+    console.log(arr);
+    console.log('-------------')
+  }
+  
+  return arr;
+}
+var arr = [ 5,9,8,2,4]
+var result = BubbleSort3(arr);
+
+
+
+function BubbleSort4(arr){
+  var i, j, temp, flag = true;
+
+  for(i = arr.length; i > 0 && flag; i--){
+    flag = false;
+    for(j = 0; j < i - 1; j++){
+      if(arr[j] > arr[j+1]){
+        temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+        flag = true;
+      }
+      console.log(i+':'+j);
+      console.log(arr);
+      console.log(flag)
+    }
+    console.log(i);
+    console.log(arr);
+    console.log(flag)
+    console.log('-------------')
+  }
+  
+  return arr;
+}
+var arr = [ 2,1,3,5,6,7,8,9]
+var result = BubbleSort4(arr);
+~~~
+
 ### 参考：
 [维基百科中文](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)  
 [维基百科英文](https://en.wikipedia.org/wiki/Bubble_sort)   
