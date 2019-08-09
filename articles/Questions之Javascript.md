@@ -349,4 +349,7 @@ JavaScript 运行机制详解：再谈Event Loop：
 http://www.ruanyifeng.com/blog/2014/10/event-loop.html
 ~~~
 
-原：https://github.com/h5bp/Front-end-Developer-Interview-Questions#js-questions
+https://github.com/h5bp/Front-end-Developer-Interview-Questions#js-questions   
+https://www.guru99.com/javascript-interview-questions-answers.html   
+https://www.edureka.co/blog/interview-questions/javascript-interview-questions/   
+https://www.onlineinterviewquestions.com/advanced-javascript-interview-questions/   
