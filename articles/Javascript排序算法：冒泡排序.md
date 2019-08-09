@@ -163,6 +163,22 @@ function BubbleSort4(arr){
 }
 var arr = [ 2,1,3,5,6,7,8,9]
 var result = BubbleSort4(arr);
+
+var bubble_sort = (arr) => {
+  for(var i = 0; i < arr.length; i++){
+    for(var j = 0; j < arr.length - i - 1; j++){
+      if(arr[j] > arr[j+1]){
+        var temp = arr[j];
+        arr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+var arr = [4,5,6,3,2,1]
+bubble_sort(arr)
 ~~~
 
 ### 参考：

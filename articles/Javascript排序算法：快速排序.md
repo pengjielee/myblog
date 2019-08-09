@@ -159,4 +159,52 @@ function QuickSort(array) {
 var array = [4, 8, 2, 10, 50, 30, 80];
 var result = QuickSort(array);
 console.log(result);
+
+
+实现4:
+function QuickSort(){
+  function exch(arr,i,j){
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+
+  function partition(arr, lo, hi ){
+    //debugger;
+    var i = lo, j = hi + 1;
+
+    var v = arr[lo];
+
+    while(true){
+      while( arr[++i] < v ){
+        if( i == hi ) { break; }
+      }
+      while( v < arr[--j] ){
+        if( j == lo ) { break; }
+      }
+      if( i >= j){
+        break;
+      }
+      exch(arr,i,j)
+    }
+    exch(arr,lo,j);
+    return j;
+  }
+
+  function sort(arr,lo,hi){
+    if(hi <= lo) { return }
+    var j = partition(arr,lo,hi);
+    sort(arr,lo,j-1);
+    sort(arr,j+1,hi);
+  }
+
+  return {
+    sort: sort
+  }
+}
+
+var arr = [8,9,3,4,10,5,2];
+
+var quickSort = new QuickSort()
+quickSort.sort(arr,0,arr.length-1);
 ~~~
