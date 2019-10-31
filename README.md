@@ -10,6 +10,9 @@
 - [Javascript基础之逻辑运算符](https://github.com/pengjielee/blog/issues/8) 
 - [Javascript基础之双等号](https://github.com/pengjielee/blog/issues/9) 
 - [Javascript基础之数组去重](https://github.com/pengjielee/blog/issues/10) 
+
+## Javascript比较
+
 - [Javascript比较var,let,const](https://github.com/pengjielee/blog/issues/11) 
 - [Javascript比较defer和async](https://github.com/pengjielee/blog/issues/12) 
 - [Javascript比较slice和splice](https://github.com/pengjielee/blog/issues/13) 
@@ -27,12 +30,28 @@
 - [Javascript编程之实现自定义事件接口](https://github.com/pengjielee/blog/issues/17)  
 - [Javascript编程之并行与串行](https://github.com/pengjielee/blog/issues/18)  
 - [Javascript编程之程序输出](https://github.com/pengjielee/blog/issues/19)  
+- [Javascript编程之合并升序数组](https://github.com/pengjielee/blog/issues/69)  
+- [Javascript编程之斐波那契数列](https://github.com/pengjielee/blog/issues/70)  
+- [Javascript编程之随机数](https://github.com/pengjielee/blog/issues/71)  
 
 ## Javascript设计模式
 
 - [Javascript设计模式之单例模式](https://github.com/pengjielee/blog/issues/20)  
 - [Javascript设计模式之工厂模式](https://github.com/pengjielee/blog/issues/21)  
 - [Javascript设计模式之观察者模式](https://github.com/pengjielee/blog/issues/22)  
+- [Javascript设计模式之代理模式](https://github.com/pengjielee/blog/issues/56)
+- [Javascript设计模式之发布订阅模式](https://github.com/pengjielee/blog/issues/57)
+- [Javascript设计模式之命令模式](https://github.com/pengjielee/blog/issues/58)
+- [Javascript设计模式之工厂模式](https://github.com/pengjielee/blog/issues/59)
+- [Javascript设计模式之模板方法模式](https://github.com/pengjielee/blog/issues/60)
+- [Javascript设计模式之状态模式](https://github.com/pengjielee/blog/issues/61)
+- [Javascript设计模式之策略模式](https://github.com/pengjielee/blog/issues/62)
+- [Javascript设计模式之组合模式](https://github.com/pengjielee/blog/issues/63)
+- [Javascript设计模式之职责链模式](https://github.com/pengjielee/blog/issues/64)
+- [Javascript设计模式之装饰者模式](https://github.com/pengjielee/blog/issues/65)
+- [Javascript设计模式之观察者模式](https://github.com/pengjielee/blog/issues/66)
+- [Javascript设计模式之迭代器模式](https://github.com/pengjielee/blog/issues/67)
+- [Javascript设计模式之适配器模式](https://github.com/pengjielee/blog/issues/68)
 
 ## Questions
 
@@ -63,6 +82,24 @@
 -  [Python操作Mongodb](https://github.com/pengjielee/blog/issues/43)
 -  [Python操作Mysql](https://github.com/pengjielee/blog/issues/44)
 -  [Python读写csv](https://github.com/pengjielee/blog/issues/45)
+
+## Javascript数据结构
+
+- [Javascript数据结构：栈](https://github.com/pengjielee/blog/issues/46)
+- [Javascript数据结构：队列](https://github.com/pengjielee/blog/issues/47)
+- [Javascript数据结构：树](https://github.com/pengjielee/blog/issues/48)
+- [Javascript数据结构：二叉树](https://github.com/pengjielee/blog/issues/49)
+
+## Javascript排序算法
+
+- [Javascript排序算法：冒泡排序](https://github.com/pengjielee/blog/issues/50)
+- [Javascript排序算法：插入排序](https://github.com/pengjielee/blog/issues/51)
+- [Javascript排序算法：选择排序](https://github.com/pengjielee/blog/issues/52)
+- [Javascript排序算法：希尔排序](https://github.com/pengjielee/blog/issues/53)
+- [Javascript排序算法：归并排序](https://github.com/pengjielee/blog/issues/54)
+- [Javascript排序算法：快速排序](https://github.com/pengjielee/blog/issues/55)
+
+
 
 
 
