@@ -47,4 +47,12 @@
 -  [算法必知必会：二分查找](https://github.com/pengjielee/blog/issues/33)
 -  [算法必知必会：二分查找变形](https://github.com/pengjielee/blog/issues/34)
 -  [算法必知必会：合并有序数组](https://github.com/pengjielee/blog/issues/35)
--  [算法必知必会：字符串反转](https://github.com/pengjielee/blog/issues/36)
+-  [算法必知必会：字符串反转](https://github.com/pengjielee/blog/issues/36) 
+
+## 关于博客
+
+-  [关于博客：使用Github Issue写博客](https://github.com/pengjielee/blog/issues/37)
+-  [关于博客：个人博客收藏](https://github.com/pengjielee/blog/issues/38)
+-  [关于博客：搭建Ghost博客](https://github.com/pengjielee/blog/issues/39)
+
+
