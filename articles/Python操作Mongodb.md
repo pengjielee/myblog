@@ -1,15 +1,15 @@
-1、查看python版本/更新pip
+### 1、查看python版本/更新pip
 ~~~
 $ python3 --version
 $ pip install --upgrade pip
 ~~~
 
-2、安装
+### 2、安装
 ~~~
 pip install pymongo
 ~~~
 
-3、连接mongodb
+### 3、连接mongodb
 ~~~
 from pymongo import MongoClient
 
@@ -25,7 +25,7 @@ db = client.wangyi
 collection = db.playlist
 ~~~
 
-4、插入
+### 4、插入
 ~~~
 # 插入单条
 result = collection.insert_one({'title':'test'})
@@ -36,7 +36,7 @@ result = collection.insert_many([{'title':'test1'},{'title':'test2'}])
 pprint(result)
 ~~~
 
-5、查询
+### 5、查询
 ~~~
 # 查询一条
 result = collection.find_one({})
@@ -65,14 +65,14 @@ results = collection.find({'$text': {'$search': 'Mike'}})#text类型的属性中
 results = collection.find({'$where': 'obj.fans_count == obj.follows_count'})#自身粉丝数等于关注数
 ~~~
 
-6、count()
+### 6、count()
 ~~~
 count = collection.find().count()
 print(count)
 ~~~
 
 
-7、排序
+### 7、排序
 ~~~
 # 升序
 results = collection.find().sort('name', pymongo.ASCENDING)
@@ -81,12 +81,12 @@ results = collection.find().sort('name', pymongo.ASCENDING)
 results = collection.find().sort('name', pymongo.DESCENDING)
 ~~~
 
-9、分页
+### 9、分页
 ~~~
 results = collection.find().skip(10).limit(10)
 ~~~
 
-10、更新
+### 10、更新
 ~~~
 # 更新一条
 condition = {'title': 'test'}
@@ -101,7 +101,7 @@ item['title'] = 'test1'
 result = collection.update_many(condition, {'$set': item})
 ~~~
 
-11、移除
+### 11、移除
 ~~~
 result = collection.remove({})
 print(result)

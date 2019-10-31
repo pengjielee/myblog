@@ -1,6 +1,5 @@
 ### 源代码
 ~~~
-# datetime: 2019.01.24
 # filename: spider.py
 
 import sys
