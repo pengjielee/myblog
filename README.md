@@ -41,3 +41,10 @@
 - [Questions之Javascript](https://github.com/pengjielee/blog/issues/25) 
 - [Questions之Network](https://github.com/pengjielee/blog/issues/26) 
 - [Questions之Vuejs](https://github.com/pengjielee/blog/issues/27)  
+
+## 算法必知必会  
+
+-  [算法必知必会：二分查找](https://github.com/pengjielee/blog/issues/33)
+-  [算法必知必会：二分查找变形](https://github.com/pengjielee/blog/issues/34)
+-  [算法必知必会：合并有序数组](https://github.com/pengjielee/blog/issues/35)
+-  [算法必知必会：字符串反转](https://github.com/pengjielee/blog/issues/36)
