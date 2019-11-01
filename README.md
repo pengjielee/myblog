@@ -53,6 +53,22 @@
 - [Javascript设计模式之迭代器模式](https://github.com/pengjielee/blog/issues/67)
 - [Javascript设计模式之适配器模式](https://github.com/pengjielee/blog/issues/68)
 
+## Javascript数据结构
+
+- [Javascript数据结构：栈](https://github.com/pengjielee/blog/issues/46)
+- [Javascript数据结构：队列](https://github.com/pengjielee/blog/issues/47)
+- [Javascript数据结构：树](https://github.com/pengjielee/blog/issues/48)
+- [Javascript数据结构：二叉树](https://github.com/pengjielee/blog/issues/49)
+
+## Javascript排序算法
+
+- [Javascript排序算法：冒泡排序](https://github.com/pengjielee/blog/issues/50)
+- [Javascript排序算法：插入排序](https://github.com/pengjielee/blog/issues/51)
+- [Javascript排序算法：选择排序](https://github.com/pengjielee/blog/issues/52)
+- [Javascript排序算法：希尔排序](https://github.com/pengjielee/blog/issues/53)
+- [Javascript排序算法：归并排序](https://github.com/pengjielee/blog/issues/54)
+- [Javascript排序算法：快速排序](https://github.com/pengjielee/blog/issues/55)
+
 ## Questions
 
 - [Questions之HTML](https://github.com/pengjielee/blog/issues/23)  
@@ -82,22 +98,6 @@
 -  [Python操作Mongodb](https://github.com/pengjielee/blog/issues/43)
 -  [Python操作Mysql](https://github.com/pengjielee/blog/issues/44)
 -  [Python读写csv](https://github.com/pengjielee/blog/issues/45)
-
-## Javascript数据结构
-
-- [Javascript数据结构：栈](https://github.com/pengjielee/blog/issues/46)
-- [Javascript数据结构：队列](https://github.com/pengjielee/blog/issues/47)
-- [Javascript数据结构：树](https://github.com/pengjielee/blog/issues/48)
-- [Javascript数据结构：二叉树](https://github.com/pengjielee/blog/issues/49)
-
-## Javascript排序算法
-
-- [Javascript排序算法：冒泡排序](https://github.com/pengjielee/blog/issues/50)
-- [Javascript排序算法：插入排序](https://github.com/pengjielee/blog/issues/51)
-- [Javascript排序算法：选择排序](https://github.com/pengjielee/blog/issues/52)
-- [Javascript排序算法：希尔排序](https://github.com/pengjielee/blog/issues/53)
-- [Javascript排序算法：归并排序](https://github.com/pengjielee/blog/issues/54)
-- [Javascript排序算法：快速排序](https://github.com/pengjielee/blog/issues/55)
 
 ## 微信小程序
 
