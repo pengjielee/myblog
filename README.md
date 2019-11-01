@@ -104,6 +104,17 @@
 - [微信小程序组件库](https://github.com/pengjielee/blog/issues/72)
 - [微信小程序开发总结](https://github.com/pengjielee/blog/issues/73)
 
+## Centos
+
+- [Centos修改用户密码](https://github.com/pengjielee/blog/issues/74)
+- [Centos关机与重启](https://github.com/pengjielee/blog/issues/75)
+- [Centos定时备份Mongodb](https://github.com/pengjielee/blog/issues/76)
+- [Centos常用命令](https://github.com/pengjielee/blog/issues/77)
+- [Centos文件传输](https://github.com/pengjielee/blog/issues/78)
+- [Centos服务管理](https://github.com/pengjielee/blog/issues/79)
+- [Centos查看系统信息](https://github.com/pengjielee/blog/issues/80)
+- [Centos用户管理](https://github.com/pengjielee/blog/issues/81)
+- [Centos设置系统时间](https://github.com/pengjielee/blog/issues/82)
 
 
 

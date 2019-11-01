@@ -1,14 +1,14 @@
 在linux下一般用scp这个命令来通过ssh传输文件。
 
 
-1、从服务器上下载文件
+### 1、从服务器上下载文件
 ~~~
 scp username@servername:/path/filename /var/www/local_dir（本地目录）
 
 例如scp root@192.168.0.101:/var/www/test.txt  把192.168.0.101上的/var/www/test.txt 的文件下载到/var/www/local_dir（本地目录）
 ~~~
 
-2、上传本地文件到服务器
+### 2、上传本地文件到服务器
 ~~~
 scp /path/filename username@servername:/path   
 
@@ -16,14 +16,14 @@ scp /path/filename username@servername:/path
 ~~~
  
 
-3、从服务器下载整个目录
+### 3、从服务器下载整个目录
 ~~~
 scp -r username@servername:/var/www/remote_dir/（远程目录） /var/www/local_dir（本地目录）
 
 例如:scp -r root@192.168.0.101:/var/www/test  /var/www/  
 ~~~
 
-4、上传目录到服务器
+### 4、上传目录到服务器
 ~~~
 scp  -r local_dir username@servername:remote_dir
 

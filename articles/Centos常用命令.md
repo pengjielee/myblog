@@ -37,19 +37,22 @@ export PATH=<mongodb-install-directory>/bin:$PATH                          # 将
 在Linux下重命名文件或目录，可以使用mv命令或rename命令，这里分享下二者的使用方法。
 
 mv命令既可以重命名，又可以移动文件或文件夹。
-
+~~~
 例子：将目录A重命名为B
 mv A B
 
 例子：将/a目录移动到/b下，并重命名为c
 mv /a /b/c
+~~~
 
 其实在文本模式中要重命名文件或目录，只需要使用mv命令就可以了，比如说要将一个名为abc的文件重命名为1234：
+~~~
 mv abc 1234
+~~~
 注意，如果当前目录下也有个1234的文件的话，这个文件是会将它覆盖的。
 
 ### 压缩/解压（zip/unzip）
-
+~~~
 1、把/home目录下面的mydata目录压缩为mydata.zip
 zip -r mydata.zip mydata #压缩mydata目录
 
@@ -73,6 +76,7 @@ unzip -t wwwroot.zip
 
 8、把/home目录下面wwwroot.zip里面的所有文件解压到第一级目录
 unzip -j wwwroot.zip
+~~~
 
 主要参数
 -c：将解压缩的结果

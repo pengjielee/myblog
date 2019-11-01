@@ -1,13 +1,13 @@
-1. 创建mongodb数据库备份目录
-
+### 1. 创建mongodb数据库备份目录
+~~~
 > mkdir -p /data/mongodb_bak/mongodb_bak_now
 > mkdir -p /data/mongodb_bak/mongodb_bak_list
+~~~
 
-2. 创建mongodb数据库备份脚本
-
+### 2. 创建mongodb数据库备份脚本
+~~~
 > vi /home/backup_mongodb.sh
 
-~~~
 #!/bin/bash
 #backup MongoDB
 
@@ -42,16 +42,15 @@ find $TAR_DIR/ -mtime +$DAYS -delete
 exit
 ~~~
 
-3. 修改文件属性，使其可执行
-
+### 3. 修改文件属性，使其可执行
+~~~
 > chmod +x /home/crontab/mongod_bak.sh
+~~~
 
-
-4. 修改/etc/crontab, 添加计划任务
-
+### 4. 修改/etc/crontab, 添加计划任务
+~~~
 > vi /etc/crontab
 
-~~~
 SHELL=/bin/bash
 PATH=/sbin:/bin:/usr/sbin:/usr/bin
 MAILTO=root
@@ -69,14 +68,14 @@ MAILTO=root
 0 0 * * * root /home/backup_mongodb.sh # 每天24:00执行备份
 ~~~
 
-5. 重新启动crond使设置生效
-
+### 5. 重新启动crond使设置生效
+~~~
 > /bin/systemctl reload crond.service  #重新载入配置
 
 > systemctl status crond
 
 > systemctl enable crond.service #开机自动启动
-
+~~~
 
 mongodb 定时备份
 https://www.cnblogs.com/zhang-ke/p/7804503.html
