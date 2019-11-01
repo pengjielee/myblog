@@ -99,6 +99,10 @@
 - [Javascript排序算法：归并排序](https://github.com/pengjielee/blog/issues/54)
 - [Javascript排序算法：快速排序](https://github.com/pengjielee/blog/issues/55)
 
+## 微信小程序
+
+- [微信小程序组件库](https://github.com/pengjielee/blog/issues/72)
+- [微信小程序开发总结](https://github.com/pengjielee/blog/issues/73)
 
 
 
