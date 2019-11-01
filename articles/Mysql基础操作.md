@@ -1,3 +1,33 @@
+### 登录数据库
+~~~
+mysql -u root -p
+~~~
+
+### 查询数据库
+~~~
+show databases;
+~~~
+
+### 创建数据库
+~~~
+create database test;
+~~~
+
+### 切换数据库
+~~~
+use test;
+~~~
+
+### 查看当前数据库；
+~~~
+select database();
+~~~
+
+### 查询表
+~~~
+show tables;
+~~~
+
 ### 创建表
 ~~~
 CREATE TABLE `house`.`zz` (
@@ -10,7 +40,16 @@ CREATE TABLE `house`.`zz` (
   `total_price` VARCHAR(256) NULL,
   `unit_price` VARCHAR(256) NULL,
   `tags` VARCHAR(256) NULL,
-  PRIMARY KEY (`id`));
+  PRIMARY KEY (`id`)
+);
+
+create tabel user
+(
+    id int unsigned not null auto_increment primary key,
+    name char(10) not null,
+    age tinyint unsigned not null,
+    birth datetime
+);
 ~~~
 
 ### 修改表
@@ -87,7 +126,6 @@ insert into tb_new select * from tb
 
 b. 表结构不一样
 insert into tb_new (field1,field2,...) select field1,field2,... from tb
-
 ~~~
 
 ### 参考
