@@ -88,6 +88,13 @@ function readBlobAsDataURL(blob, callback) {
   };
   reader.readAsDataURL(blob);
 }
+
+readBlobAsDataURL(blob, function (dataurl){
+    console.log(dataurl);
+});
+readBlobAsDataURL(file, function (dataurl){
+    console.log(dataurl);
+});
 ~~~
 
 ### 6. Blob/File的图片文件数据绘制到Canvas
