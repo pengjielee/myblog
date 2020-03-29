@@ -1,4 +1,4 @@
-1、
+1、question
 ~~~
 const a = {
   i: 1,
@@ -10,6 +10,7 @@ const a = {
 console.log(a.toString()) // 1
 console.log(a.valueOf())  // 对象本身
 
+// 如何打出Hello World！呢？
 if(a == 1 && a == 2 && a == 3) {
   console.log('Hello World!');
 }
@@ -53,12 +54,12 @@ var x = 1, y = 2, z = 3;
 var add = function(x){
   return x = x + 1;
 }
-x = add(1);  //x=4
-function add(x){
+x = add(1);  //x=2
+function add(x){  //函数声明提升了
   return x = x + 3;
 }
-y = add(2); //y=5
-z = add(3); //z=6
+y = add(2); //y=3
+z = add(3); //z=4
 console.log(x+'-'+y+'-'+z) //2-3-4
 ~~~
 
@@ -67,7 +68,7 @@ console.log(x+'-'+y+'-'+z) //2-3-4
 var hello = function(){
   console.log('hello1')
 }
-function hello(){
+function hello(){ //函数声明提升了
   console.log('hello2')
 }
 hello(); //hello1
@@ -75,34 +76,21 @@ hello(); //hello1
 
 7、
 ~~~
-//first apply
 for(var i = 0; i < 3; i++){
   console.log(i)
   setTimeout(function(){
-    return function(){
-      console.log(i)
-    }
+    console.log(i)
   },0)
-} // 0 1 2 3 
-
-//second apply
-for(var i = 0; i < 3; i++){
-  console.log(i)
-  setTimeout(function(){
-    return function(){
-      console.log(i)
-    }
-  },0)
-} // 0 1 2 6
-
-for(var i = 0; i < 3; i++){
-  console.log(i)
-}// 0 1 2
-
-for(var i = 0; i < 3; ++i){
-  console.log(i)
-}// 0 1 2
+} // 0 1 2 3 3 3
 ~~~
+
+```
+for(var i = 0; i < 3; i++){
+  console.log(i)
+}// 0 1 2
+
+console.log(i); //3
+```
 
 8、
 ~~~
@@ -119,11 +107,11 @@ var object = {
   }
 }
 
-console.log(object.num);//2
-console.log(num); //1
+console.log(object.num);//2, object作用域下
+console.log(num); //1, window作用域下
 var add = object.add;
-add()();//3
-object.add()()//4
+add()();//3, window作用域下,this是window
+object.add()()//4, window作用域下,this是window
 ~~~
 
 参考：

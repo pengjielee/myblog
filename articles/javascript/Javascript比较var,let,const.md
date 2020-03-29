@@ -10,6 +10,17 @@ function f(){
 }
 f(); // undefined
 
+// demo11+
+var name = 'jim';
+function f(){
+	console.log(name)
+	if(true){
+		var name = 'tom'
+	}
+	console.log(name);
+}
+f(); // undefined tom
+
 // demo12: 循环变量泄漏为全局变量
 var str = 'hello';
 for(var i=0; i < str.length; i++){

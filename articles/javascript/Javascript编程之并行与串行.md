@@ -27,7 +27,7 @@ let promises = values.map(value => makePromise(value)) // 这里就已经开始�
 let parallelPromises = promises.reduce(
     (current, next) => current.then(() => next.then(print)),
     Promise.resolve()
-)//?
+)
 
 parallelPromises
     .then(() => console.log("done"))

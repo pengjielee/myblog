@@ -50,7 +50,8 @@ for (let value of unitArr) {
 }
 
 // 遍历Map对象
-var map = new Map([['a', 1], ['b', 2], ['c', 3]]) for (let value of map) {
+var map = new Map([['a', 1], ['b', 2], ['c', 3]]) 
+for (let value of map) {
 	console.log(value) // ['a',1] ['b',2] ['c',3]
 }
 
