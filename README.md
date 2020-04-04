@@ -21,7 +21,22 @@
 ## Javascript进阶
 
 - [Javascript进阶之浅拷贝和深拷贝](https://github.com/pengjielee/blog/issues/28)  
-- [Javascript进阶之函数防抖和节流](https://github.com/pengjielee/blog/issues/29)  
+- [Javascript进阶之函数防抖和节流](https://github.com/pengjielee/blog/issues/29) 
+- [Javascript原理：instanceof原理](https://github.com/pengjielee/blog/issues/83) 
+- [Javascript原理：new原理](https://github.com/pengjielee/blog/issues/84) 
+- [Javascript原理：object.create原理](https://github.com/pengjielee/blog/issues/85)
+
+## Javascript手写代码
+
+- [Javascript手写：ajax](https://github.com/pengjielee/blog/issues/86)  
+- [Javascript手写：bind,call,apply](https://github.com/pengjielee/blog/issues/87)  
+- [Javascript手写：jsonp](https://github.com/pengjielee/blog/issues/88)  
+- [Javascript手写：promise](https://github.com/pengjielee/blog/issues/89)  
+- [Javascript手写：promise.all](https://github.com/pengjielee/blog/issues/90)  
+- [Javascript手写：reduce](https://github.com/pengjielee/blog/issues/91)  
+- [Javascript手写：实现JSON.parse()](https://github.com/pengjielee/blog/issues/93)  
+- [Javascript手写：实现JSON.stringify()](https://github.com/pengjielee/blog/issues/93)  
+
 
 ## Javascript编程
 
