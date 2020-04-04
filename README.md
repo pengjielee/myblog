@@ -26,7 +26,7 @@
 - [Javascript原理：new原理](https://github.com/pengjielee/blog/issues/84) 
 - [Javascript原理：object.create原理](https://github.com/pengjielee/blog/issues/85)
 
-## Javascript手写代码
+## Javascript手写
 
 - [Javascript手写：ajax](https://github.com/pengjielee/blog/issues/86)  
 - [Javascript手写：bind,call,apply](https://github.com/pengjielee/blog/issues/87)  
@@ -68,21 +68,28 @@
 - [Javascript设计模式之迭代器模式](https://github.com/pengjielee/blog/issues/67)
 - [Javascript设计模式之适配器模式](https://github.com/pengjielee/blog/issues/68)
 
-## Javascript数据结构
+## 数据结构与算法
 
 - [Javascript数据结构：栈](https://github.com/pengjielee/blog/issues/46)
 - [Javascript数据结构：队列](https://github.com/pengjielee/blog/issues/47)
 - [Javascript数据结构：树](https://github.com/pengjielee/blog/issues/48)
 - [Javascript数据结构：二叉树](https://github.com/pengjielee/blog/issues/49)
-
-## Javascript排序算法
-
 - [Javascript排序算法：冒泡排序](https://github.com/pengjielee/blog/issues/50)
 - [Javascript排序算法：插入排序](https://github.com/pengjielee/blog/issues/51)
 - [Javascript排序算法：选择排序](https://github.com/pengjielee/blog/issues/52)
 - [Javascript排序算法：希尔排序](https://github.com/pengjielee/blog/issues/53)
 - [Javascript排序算法：归并排序](https://github.com/pengjielee/blog/issues/54)
 - [Javascript排序算法：快速排序](https://github.com/pengjielee/blog/issues/55)
+- [算法：二分查找](https://github.com/pengjielee/blog/issues/33)
+- [算法：二分查找变形](https://github.com/pengjielee/blog/issues/34)
+- [算法：合并有序数组](https://github.com/pengjielee/blog/issues/35)
+- [算法：字符串反转](https://github.com/pengjielee/blog/issues/36) 
+- [算法：合并两个有序链表](https://github.com/pengjielee/blog/issues/94) 
+- [算法：判断对称二叉树](https://github.com/pengjielee/blog/issues/95) 
+- [算法：判断左右小括号是否全部匹配](https://github.com/pengjielee/blog/issues/96) 
+- [算法：树的遍历方式](https://github.com/pengjielee/blog/issues/97) 
+
+
 
 ## Questions
 
@@ -92,12 +99,6 @@
 - [Questions之Network](https://github.com/pengjielee/blog/issues/26) 
 - [Questions之Vuejs](https://github.com/pengjielee/blog/issues/27)  
 
-## 算法必知必会  
-
--  [算法必知必会：二分查找](https://github.com/pengjielee/blog/issues/33)
--  [算法必知必会：二分查找变形](https://github.com/pengjielee/blog/issues/34)
--  [算法必知必会：合并有序数组](https://github.com/pengjielee/blog/issues/35)
--  [算法必知必会：字符串反转](https://github.com/pengjielee/blog/issues/36) 
 
 ## 关于博客
 
