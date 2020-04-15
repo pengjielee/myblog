@@ -114,7 +114,7 @@ var array = [4, 8, 2, 10, 50, 30, 80];
 QuickSort(array);
 
 
-实现3：
+实现3：(master)
 function swap(array, a, b) {
   var temp = array[a];
   array[a] = array[b];
