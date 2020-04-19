@@ -35,7 +35,7 @@ function ShellSort2(arr){
 	var i, j, tmp;
   var gap = parseInt(arr.length/2);      
   for( ; gap > 0; gap = parseInt(gap/2)){
-  	debugger;                        
+  	//debugger;                        
     for(var i = gap; i < arr.length; i++){    //插入排序法 
       tmp = arr[i];
       for(j = i; j >= gap && tmp < arr[j-gap]; j-=gap){
