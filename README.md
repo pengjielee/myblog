@@ -10,24 +10,15 @@
 - [Javascript基础之逻辑运算符](https://github.com/pengjielee/blog/issues/8) 
 - [Javascript基础之双等号](https://github.com/pengjielee/blog/issues/9) 
 - [Javascript基础之数组去重](https://github.com/pengjielee/blog/issues/10) 
-
-## Javascript比较
-
 - [Javascript比较var,let,const](https://github.com/pengjielee/blog/issues/11) 
 - [Javascript比较defer和async](https://github.com/pengjielee/blog/issues/12) 
 - [Javascript比较slice和splice](https://github.com/pengjielee/blog/issues/13) 
 - [Javascript比较substr和substring](https://github.com/pengjielee/blog/issues/14) 
-
-## Javascript进阶
-
 - [Javascript进阶之浅拷贝和深拷贝](https://github.com/pengjielee/blog/issues/28)  
 - [Javascript进阶之函数防抖和节流](https://github.com/pengjielee/blog/issues/29) 
 - [Javascript原理：instanceof原理](https://github.com/pengjielee/blog/issues/83) 
 - [Javascript原理：new原理](https://github.com/pengjielee/blog/issues/84) 
 - [Javascript原理：object.create原理](https://github.com/pengjielee/blog/issues/85)
-
-## Javascript手写
-
 - [Javascript手写：ajax](https://github.com/pengjielee/blog/issues/86)  
 - [Javascript手写：bind,call,apply](https://github.com/pengjielee/blog/issues/87)  
 - [Javascript手写：jsonp](https://github.com/pengjielee/blog/issues/88)  
@@ -36,10 +27,6 @@
 - [Javascript手写：reduce](https://github.com/pengjielee/blog/issues/91)  
 - [Javascript手写：实现JSON.parse()](https://github.com/pengjielee/blog/issues/93)  
 - [Javascript手写：实现JSON.stringify()](https://github.com/pengjielee/blog/issues/93)  
-
-
-## Javascript编程
-
 - [Javascript编程之map与parseInt](https://github.com/pengjielee/blog/issues/15)  
 - [Javascript编程之Promise输出](https://github.com/pengjielee/blog/issues/16)  
 - [Javascript编程之实现自定义事件接口](https://github.com/pengjielee/blog/issues/17)  
@@ -89,8 +76,6 @@
 - [算法：判断左右小括号是否全部匹配](https://github.com/pengjielee/blog/issues/96) 
 - [算法：树的遍历方式](https://github.com/pengjielee/blog/issues/97) 
 
-
-
 ## Questions
 
 - [Questions之HTML](https://github.com/pengjielee/blog/issues/23)  
@@ -98,7 +83,6 @@
 - [Questions之Javascript](https://github.com/pengjielee/blog/issues/25) 
 - [Questions之Network](https://github.com/pengjielee/blog/issues/26) 
 - [Questions之Vuejs](https://github.com/pengjielee/blog/issues/27)  
-
 
 ## 关于博客
 
