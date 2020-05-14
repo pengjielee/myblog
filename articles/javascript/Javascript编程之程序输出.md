@@ -1,5 +1,5 @@
 1、question
-~~~
+```
 const a = {
   i: 1,
   toString: function () {
@@ -14,10 +14,10 @@ console.log(a.valueOf())  // 对象本身
 if(a == 1 && a == 2 && a == 3) {
   console.log('Hello World!');
 }
-~~~
+```
 
 2、
-~~~
+```
 var i = 0;
 
 with({
@@ -28,17 +28,17 @@ with({
   if (a == 1 && a == 2 && a == 3)
     console.log("wohoo");
 }
-~~~
+```
 
 3、
-~~~
+```
 var a = [1,2,3];
 a.join = a.shift;
 console.log(a == 1 && a == 2 && a == 3);
-~~~
+```
 
 4、
-~~~
+```
 console.log(typeof(null)) //object
 console.log(typeof(undefined)) //undefined
 console.log(typeof(NaN)) //number
@@ -46,10 +46,10 @@ console.log(typeof(NaN)) //number
 var str = '12345f'
 console.log(typeof(str)) //string
 console.log(typeof(str++)) //number
-~~~
+```
 
 5、
-~~~
+```
 var x = 1, y = 2, z = 3;
 var add = function(x){
   return x = x + 1;
@@ -61,10 +61,10 @@ function add(x){  //函数声明提升了
 y = add(2); //y=3
 z = add(3); //z=4
 console.log(x+'-'+y+'-'+z) //2-3-4
-~~~
+```
 
 6、
-~~~
+```
 var hello = function(){
   console.log('hello1')
 }
@@ -72,17 +72,17 @@ function hello(){ //函数声明提升了
   console.log('hello2')
 }
 hello(); //hello1
-~~~
+```
 
 7、
-~~~
+```
 for(var i = 0; i < 3; i++){
   console.log(i)
   setTimeout(function(){
     console.log(i)
   },0)
 } // 0 1 2 3 3 3
-~~~
+```
 
 ```
 for(var i = 0; i < 3; i++){
@@ -93,7 +93,7 @@ console.log(i); //3
 ```
 
 8、
-~~~
+```
 var num = 1;
 
 var object = {
@@ -112,7 +112,8 @@ console.log(num); //1, window作用域下
 var add = object.add;
 add()();//3, window作用域下,this是window
 object.add()()//4, window作用域下,this是window
-~~~
+```
 
-参考：
+# More
+
 [https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true](https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true)

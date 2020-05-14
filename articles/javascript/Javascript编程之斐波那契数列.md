@@ -1,10 +1,11 @@
+## fibonacci
 ~~~
 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 
 F(n) = F(n-1) + F(n-2)
 ~~~
 
-### While loop
+## While loop
 ~~~
 function fibonacci(num){
   var a = 1, b = 0, temp;
@@ -21,7 +22,7 @@ Time complexity: O(N)
 Space complexity: Constant
 ~~~
 
-### Recursion
+## Recursion
 ~~~
 function fibonacci(num) {
   if (num <= 1) return 1;
@@ -31,7 +32,7 @@ Time complexity: O(2^N)
 Space complexity: O(n)
 ~~~
 
-### Memoization
+## Memoization
 ~~~
 function fibonacci(num, memo) {
   memo = memo || {};

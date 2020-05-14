@@ -71,7 +71,7 @@ promise
 then: success1
 
 解释：  
-构造函数中的resolve或reject只有在第1次执行时有效，多次调用没有任何作用，promise状态一旦改变则不能再变。
+构造函数中的 resolve 或 reject 只有在第1次执行时有效，多次调用没有任何作用，promise状态一旦改变则不能再变。
 ~~~
 
 4、 
