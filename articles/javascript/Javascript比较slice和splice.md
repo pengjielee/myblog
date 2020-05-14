@@ -1,7 +1,9 @@
 ## splice()
 
 splice() 方法向/从数组中添加/删除项目，然后返回被删除的项目。  
+
 注释：该方法会改变原始数组。  
+
 arrayObject.splice(index,howmany,item1,.....,itemx)  
 
 参数  描述  
@@ -40,7 +42,7 @@ numbers.splice(0,1) //删除数组从0开始的1个元素
 console.log(numbers) // [2,3]
 
 numbers = [ 1,2,3 ]
-numbers.splice(1,2) //删除数组从1开始的1个元素
+numbers.splice(1,2) //删除数组从1开始的2个元素
 console.log(numbers) // [1]
 ~~~
 
@@ -50,11 +52,12 @@ slice() 方法可提取字符串的某个部分，并以新的字符串返回被
 
 stringObject.slice(start,end)  
 
-start 要抽取的片断的起始下标。如果是负数，则该参数规定的是从字符串的尾部开始算起的位置。也就是说，-1 指字符串的最后一个字符，-2 指倒数第二个字符，以此类推。  
-end 紧接着要抽取的片段的结尾的下标。若未指定此参数，则要提取的子串包括 start 到原字符串结尾的字符串。如果该参数是负数，那么它规定的是从字符串的尾部开始算起的位置。  
+- start 要抽取的片断的起始下标。如果是负数，则该参数规定的是从字符串的尾部开始算起的位置。也就是说，-1 指字符串的最后一个字符，-2 指倒数第二个字符，以此类推。  
+- end 紧接着要抽取的片段的结尾的下标。若未指定此参数，则要提取的子串包括 start 到原字符串结尾的字符串。如果该参数是负数，那么它规定的是从字符串的尾部开始算起的位置。  
 
 返回值  
 一个新的字符串。包括字符串 stringObject 从 start 开始（包括 start）到 end 结束（不包括 end）为止的所有字符。  
+
 ~~~
 var name = 'lipengjie';
 console.log(name.slice(0)); //lipengjie

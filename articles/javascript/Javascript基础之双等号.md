@@ -1,20 +1,23 @@
-### 1. 是否有NaN，有的话，则一律返回false
+## 1. 是否有NaN，有的话，则一律返回false
 ~~~
 console.log(1 == NaN) //false
+console.log('1' == NaN) //false
+console.log([] == NaN) //false
 ~~~
 
-### 2. null和undefined的比较都返回true
+## 2. null和undefined的比较都返回true
 ~~~
 console.log(undefined == null) //true
 ~~~
 
-### 3. 是否有boolean值，有的话则将true转化为1，false转化为0
+## 3. 是否有boolean值，有的话则将true转化为1，false转化为0
 ~~~
 console.log(true == 1) //true
 console.log(false == 0) //true
 ~~~
 
-### 4. 有一边是字符串
+## 4. 有一边是字符串
+
 a. 同样是字符串，则直接进行字符串值的比较
 ~~~
 console.log('12' == '12') //true
@@ -44,6 +47,7 @@ var b = {
   }
 }
 var c = [[2]];
+
 console.log(a.valueOf());  //1
 console.log(a.toString()); //[object Object]
 console.log(b.valueOf());  //对象本身
@@ -64,6 +68,6 @@ console.log(c == '2');
 注意:
 Date对象不满足上述的规则，Date对象的toString和valueOf方法都是重新定义过的
 
-参考：
+# More
 [https://blog.csdn.net/qq_37530031/article/details/78317823](https://blog.csdn.net/qq_37530031/article/details/78317823)
 [https://www.jb51.net/article/103830.htm](https://www.jb51.net/article/103830.htm)

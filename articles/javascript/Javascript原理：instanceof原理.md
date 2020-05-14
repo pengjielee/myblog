@@ -38,8 +38,10 @@ console.log(dog instanceof Cat); // true
 ## instanceof原理
 
 与instanceof 有关的原型链知识：
+```
 - 所有 JavaScript 对象都有 __proto__ 属性，只有 Object.prototype.__proto__ === null ；
 - 构造函数的 prototype 属性指向它的原型对象，而构造函数实例的 __proto__ 属性也指向该原型对象；
+```
 
 instanceof 主要的实现原理就是只要右边变量的 prototype 在左边变量的原型链上即可。因此，instanceof 在查找的过程中会遍历左边变量的原型链，直到找到右边变量的 prototype，如果查找失败，则会返回 false。
 
@@ -80,6 +82,8 @@ left = p1.__proto__.__proto__ = Person.prototype.__proto__
 第三次判断
 left !== null, 此时 left === RP, 返回true, 执行完毕。
  ```
+
+# More
 
 MDN:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof

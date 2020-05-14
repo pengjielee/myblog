@@ -1,4 +1,5 @@
-### 使用ES5中的indexOf进行去重
+## 使用ES5中的indexOf进行去重
+
 ~~~
 function uniqueArr(arr) {
   var results = [];
@@ -11,7 +12,8 @@ function uniqueArr(arr) {
 }
 ~~~
 
-### 先排序后然后再相邻比较去重
+## 先排序后然后再相邻比较去重
+
 ~~~
 function uniqueArr(arr) {
   arr.sort();
@@ -25,7 +27,8 @@ function uniqueArr(arr) {
 }
 ~~~
 
-### 使用map去重
+## 使用map去重
+
 ~~~
 function uniqueArr(arr) {
   var map = {};

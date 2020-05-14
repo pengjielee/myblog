@@ -1,4 +1,5 @@
-父类：
+## 父类
+
 ```
 function Animal(name){
 	this.name = name || '001';
@@ -13,7 +14,7 @@ Animal.prototype.eat = function(food) {
 };
 ```
 
-### 一、原型链继承
+## 一、原型链继承
 
 核心：将父类的实例作为子类的原型。
 
@@ -47,7 +48,9 @@ console.log(xiaohei.colors) //["white", "black", "red"]
 Object.prototype.isPrototypeOf(xiaobai) //true
 Animal.prototype.isPrototypeOf(xiaobai) //true
 Cat.prototype.isPrototypeOf(xiaobai) //true
+
 //or
+
 console.log(xiaobai instanceof Object) //true
 console.log(xiaobai instanceof Animal) //true
 console.log(xiaobai instanceof Cat) //true
@@ -58,8 +61,7 @@ console.log(xiaobai instanceof Cat) //true
 在通过原型来实现继承时，原型实际上会变成另一个类型的实例。于是，原先的实例属性也就顺理成章地变成了现在的原型属性了。   
 2、在创建子类型的实例时，不能向超类型的构造函数中传递参数。   
 
-
-### 二、直接继承prototype:
+## 二、直接继承prototype:
 
 ```
 function Cat(name){
@@ -97,8 +99,7 @@ function extend(Child, Parent) {
 }
 ```
 
-
-### 三、构造函数继承：
+## 三、构造函数继承
 
 核心：在子类型构造函数的内部调用超类型构造函数。使用父类的构造函数来增强子类实例，等于是复制父类的实例属性给子类（没用到原型）
 
@@ -128,8 +129,7 @@ console.log(xiaobai instanceof Cat) //true
 2、只能继承父类的实例属性和方法，不能继承原型属性/方法。   
 3、无法实现函数复用，每个子类都有父类实例函数的副本，影响性能。  
 
-
-### 四、组合继承：
+## 四、组合继承
 
 介绍：将原型链和借用构造函数的技术组合到一块，从而发挥二者之长的一种继承模式。
 
@@ -164,8 +164,7 @@ console.log(xiaohei.colors)
 一次是在创建子类型原型的时候，  
 另一次是在子类型构造函数内部。  
 
-
-### 五、寄生组合继承：
+## 五、寄生组合继承
 
 介绍：通过借用构造函数来继承属性，通过原型链的混成形式来继承方法。
 
@@ -194,10 +193,11 @@ console.log(xiaobai instanceof Cat)
 寄生组合式继承是引用类型最理想的继承范式。
 
 
-### 六、原型式继承
+## 六、原型式继承
 
 核心：借助原型可以基于已有的对象创建新对象，同时还不必因此创建自定义类型。  
 本质上讲，object()对传入其中的对象执行了一次浅复制
+
 ```
 function object(o){
 	function F(){}
@@ -266,7 +266,7 @@ console.log(xiaobai.colors); //["blue", "green", "red"]
 console.log(xiaohei.colors); //["white", "balck"]
 ```
 
-### 七、寄生式继承:
+## 七、寄生式继承
 
 介绍：寄生式继承的思路与寄生构造函数和工厂模式类似，即创建一个仅用于封装继承过程的函数，该函数在内部以某种方式来增强对象，最后再返回对象。
 
@@ -300,7 +300,7 @@ xiaohua.sleep();
 问题：  
 使用寄生式继承来为对象添加函数，会由于不能做到函数复用而降低效率；这一点与构造函数模式类似。
 
-### 八、实例继承
+## 八、实例继承
 
 核心：为父类实例添加新特性，作为子类实例返回
 
@@ -323,9 +323,9 @@ var xiaohei = new Cat('xiaohei')
 console.log(xiaohei.colors) //["white", "black"]
 ```
 
-问题：  实例是父类的实例，不是子类的实例
+问题：实例是父类的实例，不是子类的实例
 
-### 九、拷贝继承
+## 九、拷贝继承
 
 ```
 function Cat(name){

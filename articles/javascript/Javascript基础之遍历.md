@@ -1,4 +1,4 @@
-### for  
+## for  
 
 ```
 var words = ['a', 'b', 'c']
@@ -8,9 +8,9 @@ for (let i = 0; i < words.length; i++) {
 }
 ```
 
-### for... in  
+## for... in  
 
-The for... in statement iterates over all non - Symbol,enumerable properties of an object.
+The for... in statement iterates over all non - Symbol, enumerable properties of an object.
 
 ```
 var people = {
@@ -26,7 +26,7 @@ for (var key in people) {
 
 [MDN for... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) 
 
-### for...of
+## for...of
 
 The for...of statement creates a loop iterating over iterable objects, including: built - inString, Array, Array - like objects(e.g., arguments or NodeList), TypedArray, Map, Set, and user - defined iterables.
 
@@ -82,7 +82,7 @@ for (let line of lines) {
 
 [MDN for...of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)  
 
-### Array.prototype.forEach()
+## Array.prototype.forEach()
 
 ```
 var words = ['a', 'b', 'c']
@@ -94,7 +94,7 @@ words.forEach(function(value, index) {
 
 [MDN Array.prototype.forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-### $.each
+## $.each
 
 ```
 var people = {

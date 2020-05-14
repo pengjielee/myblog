@@ -1,7 +1,6 @@
 JavaScript有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有1种复杂数据类型：Object。
 
-
-### 判断数组
+## 判断数组
 ~~~
 function isArray( value ){
 	return Object.prototype.toString.call(value) === '[object Array]'
@@ -15,7 +14,7 @@ isArray([]); //true
 isArray(new Array(2)); //true
 ~~~
 
-### 判断函数
+## 判断函数
 ~~~
 function isFunction( value ){
 	return typeof value === 'function';
@@ -28,7 +27,7 @@ function isFunction( value ){
 isFunction(function(){}); //true
 ~~~
 
-### 判断对象
+## 判断对象
 ~~~
 function isObject( value ){
 	return value != null && ( typeof value === 'object' || typeof value === 'function' )
@@ -62,13 +61,12 @@ isEmptyObject(cat); //false;
 isEmptyObject(undefined); //true
 isEmptyObject(null); //true
 
-
 如果要迭代的对象变量是null 或undefined的话，for-in语句会抛出错误，ECMAScript5更正了这一行为，对这种情况不在抛出错误，而是不执行循环体。
 为了保证最大限度的兼容性，建议在使用for-in循环之前，先检测确认该对象的值不是null或undefined.
 ~~~
 
 
-### 判断数字
+## 判断数字
 ~~~
 function isNumber( value ){
 	return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
@@ -94,7 +92,7 @@ isNaN(NaN); //true
 
 //es6
 function isFinite(value) {
-   Nuber.isFinite(value);
+  return Number.isFinite(value);
 };
 
 //es5
@@ -126,7 +124,7 @@ isSafeInteger(42); //true
 isSafeInteger(9007199254740992);//false
 ~~~
 
-### 判断日期
+## 判断日期
 ~~~
 function isDate( value ){
 	return Object.prototype.toString.call(value) === '[object Date]'
@@ -135,7 +133,7 @@ function isDate( value ){
 isDate(new Date()); //true
 ~~~
 
-### 判断字符串
+## 判断字符串
 ~~~
 function isString( value ){
 	return typeof value === 'string';
@@ -149,7 +147,7 @@ isString('12'); //true
 isString(12); //false
 ~~~
 
-### 判断正则
+## 判断正则
 ~~~
 function isRegExp( value ){
 	return Object.prototype.toString.call(value) === '[object RegExp]'
@@ -160,7 +158,7 @@ isRegExp('/abc/'); false
 ~~~
 
 
-### typeof
+## typeof
 ~~~
 typeof(a)              // undefined
 typeof(true)           // boolean
@@ -176,7 +174,7 @@ typeof(new Array())    // object
 typeof([])             // object
 ~~~
 
-### Object.prototype.toString.call(value)
+## Object.prototype.toString.call(value)
 ~~~
 Object.prototype.toString.call(a)             // Uncaught ReferenceError: a is not defined
 Object.prototype.toString.call(true) 					// '[object Boolean]'
