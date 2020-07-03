@@ -1,5 +1,6 @@
-### 浅拷贝
-~~~
+## 浅拷贝
+
+```
 function extendCopy(p){
   var c = {};
   for(var i in p){
@@ -8,10 +9,11 @@ function extendCopy(p){
   c.uber = p;
   return c;
 }
-~~~
+```
 
-### 深拷贝
-~~~
+## 深拷贝
+
+```
 function deepCopy(p,c){
   var c = c || {};
   for(var i in p){
@@ -24,4 +26,4 @@ function deepCopy(p,c){
   }
   return c;
 }
-~~~
+```

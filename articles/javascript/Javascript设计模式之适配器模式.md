@@ -5,7 +5,7 @@ a. 港式插头转换器；
 b. 电源适配器；
 c. USB转接口；
 
-~~~
+```
 var googleMap = {
 	show: function(){
 		console.log('render google map')
@@ -39,7 +39,7 @@ var renderMap = function(map){
 renderMap(googleMap);
 renderMap(gaodeMap);
 renderMap(baiduMapAdapter);
-~~~
+```
 
 
 

@@ -1,6 +1,6 @@
 装饰者模式可以动态地给某个对象添加一些额外的职责，而不会影响从这个类中派生的其他对象。
 
-~~~
+```
 Function.prototype.before = function(beforeFn){
 	var self = this;
 	return function(){
@@ -17,10 +17,11 @@ Function.prototype.after = function(afterFn){
 		return result;
 	}
 }
-~~~
+```
 
 ## 数据统计
-~~~
+
+```
 var login = function(){
 	console.log('login')
 }
@@ -32,10 +33,11 @@ var log = function(){
 login = login.after(log);
 
 login();
-~~~
+```
 
 ## 改变参数
-~~~
+
+```
 var login = function(type,url,param){
 	console.log(param)
 }
@@ -49,10 +51,11 @@ login = login.before(function(type,url,param){
 })
 
 login('get','http://baidu.com',{ name: 'hello' });
-~~~
+```
 
 ## 表单验证
-~~~
+
+```
 var submit = function(){
 	console.log('submit form')
 }
@@ -64,5 +67,5 @@ var validate = function(){
 submit = submit.before(validate);
 
 submit();
-~~~
+```
 

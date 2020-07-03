@@ -1,5 +1,6 @@
 ## 实现
-~~~
+
+```
 var pubsub = {};
 
 (function(q) {
@@ -61,10 +62,11 @@ var pubsub = {};
         return this;
     };
 }( pubsub ));
-~~~
+```
 
 ## 使用1
-~~~
+
+```
 var messageLogger = function( topic, data ){
   console.log(topic,data)
 }
@@ -74,10 +76,11 @@ pubsub.subscribe('newMessage',messageLogger);
 pubsub.publish('newMessage','hello world');
 pubsub.publish('newMessage',['red','yellow','blue']);
 pubsub.publish('newMessage','hello');
-~~~
+```
 
 ## 使用2
-~~~
+
+```
 var getCurrentTime = function (){
    var date = new Date(),
          m = date.getMonth() + 1,
@@ -115,10 +118,11 @@ pubsub.publish( "newDataAvailable", {
   identifier: "MSFT",
   stockPrice: 30.85
 });
-~~~
+```
 
 ## jquery-tiny-pubsub
-~~~
+
+```
 /*! Tiny Pub/Sub - v0.7.0 - 2013-01-29
 * https://github.com/cowboy/jquery-tiny-pubsub
 * Copyright (c) 2013 "Cowboy" Ben Alman; Licensed MIT */
@@ -139,4 +143,4 @@ pubsub.publish( "newDataAvailable", {
   };
 
 }(jQuery));
-~~~
+```
