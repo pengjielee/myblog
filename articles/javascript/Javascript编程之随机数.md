@@ -1,6 +1,7 @@
-编写一个javscript函数 fn，该函数有一个参数 n（数字类型），其返回值是一个数组，该数组内是 n 个随机且不重复的整数，且整数取值范围是 [2, 32]。
+编写一个javascript函数 fn，该函数有一个参数 n（数字类型），其返回值是一个数组，该数组内是 n 个随机且不重复的整数，且整数取值范围是 [2, 32]。
 
-JS实现1：
+## JS实现1
+
 ```
 function fn(n){
 	if(typeof n === 'undefined' || typeof n != 'number'){
@@ -21,15 +22,17 @@ function fn(n){
 }
 ```
 
-JS实现2：
+## JS实现2
+
 ```
 //fn函数
 function fn(n) {
   var arr = [];
   for (var i = 0; i < n; i++) {
     var rnd = getRand(2, 32);
+    // 这里直接用了 arr.includes(e)
     if (arr.includes(rnd)) {
-      i--;//减一是因为如果第i次循环的时候如果数组有了改值，就重新走一遍
+      i--;//减1是因为如果第i次循环的时候如果数组有了改值，就重新走一遍
     } else {
       arr.push(rnd);
     }
@@ -41,17 +44,18 @@ function getRand(m, n) {
   var random = Math.floor(Math.random() * (n - m + 1) + m);
   return random;
 }
-//检查是否重复,这里直接用了 arr.includes(e)
+//检查是否重复
 function checkInArr(e,arr){
-  if(arr.indexOf(e)==-1){
+  if(arr.indexOf(e) == -1){
     return false;
   }
-    return true;
+  return true;
 }
 //console.log(fn(5));
 ```
 
-伪代码：
+## 伪代码
+
 ```
 /**
  * 获取指定个数的随机整数，整数范围[2,32]
@@ -85,7 +89,7 @@ function fn(n){
 }
 ```
 
-# More
+## More
 
 为什么你的前端工作经验不值钱?
 https://sq.163yun.com/blog/article/198892655404646400

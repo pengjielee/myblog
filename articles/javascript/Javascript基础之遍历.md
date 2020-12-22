@@ -104,15 +104,13 @@ var people = {
 }
 var words = ['a', 'b', 'c']
 
-$.each(people,
-function(key, value) {
+$.each(people, function(key, value) {
 	console.log(key) // name age sex
 });
 
-$.each(words,
-function(index, value) {
+$.each(words, function(index, value) {
 	console.log(value) // a b c
-})
+});
 
 // $.each实现源码
 $.each = function(obj, callback) {

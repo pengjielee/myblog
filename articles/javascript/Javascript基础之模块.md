@@ -1,6 +1,6 @@
 ## CommonJS
 
-Javascript不仅仅适用于浏览器。  
+JavaScript不仅仅适用于浏览器。  
 
 CommonJS API将通过定义处理许多常见应用程序需求的API来填补这一空白，最终提供与Python，Ruby和Java一样丰富的标准库。其目的是让应用程序开发人员能够使用CommonJS API编写应用程序，然后在不同的JavaScript解释器和主机环境中运行该应用程序。  
 
@@ -21,10 +21,10 @@ CommonJS项目历史：
 node.js的模块系统，就是参照CommonJS规范实现的。  
 
 在CommonJS中，有一个全局性方法require()，用于加载模块。  
-~~~
+```
 var math = require('math');  
 math.add(2,3); // 5
-~~~
+```
 
 但是，由于一个重大的局限，使得CommonJS规范不适用于浏览器环境。 
 
@@ -43,11 +43,11 @@ AMD和Commonjs是兼容的，只要稍稍调换一下调用方法就实现了同
 AMD是"Asynchronous Module Definition"的缩写，意思就是"异步模块定义"。它采用异步方式加载模块，模块的加载不影响它后面语句的运行。所有依赖这个模块的语句，都定义在一个回调函数中，等到加载完成之后，这个回调函数才会运行。  
 
 AMD也采用require()语句加载模块，但是不同于CommonJS，它要求两个参数：
-~~~  
+```  
 require([module], callback);  
-~~~
+```
 
-目前，主要有两个Javascript库实现了AMD规范：require.js和curl.js。  
+目前，主要有两个JavaScript库实现了AMD规范：require.js和curl.js。  
 
 ## CMD
 
@@ -62,7 +62,7 @@ AMD和CMD都是用difine和require，但是CMD标准倾向于在使用过程中�
 AMD和CMD的区别：
 1. 对于依赖的模块，AMD是提前执行，CMD是延迟执行。不过RequireJS从2.0开始，也改成可以延迟执行（根据写法不同，处理方式不同）。CMD推崇as lazy as possible.  
 2. CMD推崇依赖就近，AMD推崇依赖前置。  
-3. AMD的API默认是一个当多个用，CMD的API严格区分，推崇职责单一。比如AMD里，require分全局require和局部require，都叫require。CMD里，没有全局require，而是根据模块系统的完备性，提供seajs.use来实现模块系统的加载启动。CMD里，每个API都简单纯粹。  
+3. AMD的API默认是一个当多个用，CMD的API严格区分，推崇职责单一。比如AMD里，require分全局require和局部require，都叫require。CMD里，没有全局require，而是根据模块系统的完备性，提供seajs.use来实现模块系统的加载启动。CMD里，每个API都简单纯粹。
 
 AMD和CMD最大的区别是对依赖模块的执行时机处理不同，而不是加载的时机或者方式不同，二者皆为异步加载模块。
 AMD依赖前置，js可以方便知道依赖模块是谁，立即加载； 
@@ -73,10 +73,10 @@ CMD就近依赖，需要使用把模块变为字符串解析一遍才知道依�
 在 ES6 之前，社区制定了一些模块加载方案，最主要的有 CommonJS 和 AMD 两种。 
 前者用于服务器，后者用于浏览器。ES6 在语言标准的层面上，实现了模块功能，而且实现得相当简单，完全可以取代 CommonJS 和 AMD 规范，成为浏览器和服务器通用的模块解决方案。
 
-~~~
+```
 // ES6模块
 import { stat, exists, readFile } from 'fs';
-~~~
+```
 
 上面代码的实质是从fs模块加载 3 个方法，其他方法不加载。这种加载称为“编译时加载”或者静态加载，即 ES6 可以在编译时就完成模块加载，效率要比 CommonJS 模块的加载方式高。当然，这也导致了没法引用 ES6 模块本身，因为它不是对象。  
  

@@ -1,6 +1,7 @@
 将两个升序数组合并成一个升序数组。
 
 ## 实现1
+
 ```
 //O(n) time & O(n) space
 function mergeArray1(arr1, arr2){
@@ -32,6 +33,7 @@ This works but we have undefined at the end which will always happen since one o
 ```
 
 ## 实现2
+
 ```
 //O(n) time & O(n) space
 function mergeArray2(arr1, arr2){
@@ -61,7 +63,8 @@ var result = mergeArray2(arr1,arr2);
 console.log(result) // [2, 4, 5, 6, 7, 9, 10,12]
 ```
 
-## 实现3：
+## 实现3
+
 ```
 function mergeArray3(arr1,arr2){
 	var result = arr1.concat(arr2);

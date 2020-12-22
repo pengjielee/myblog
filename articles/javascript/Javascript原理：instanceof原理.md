@@ -83,10 +83,10 @@ left = p1.__proto__.__proto__ = Person.prototype.__proto__
 left !== null, 此时 left === RP, 返回true, 执行完毕。
  ```
 
-# More
+## More
 
-MDN:
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof
+MDN instanceof  
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof  
 
-instanceof 的原理是什么
-https://blog.csdn.net/sinat_17775997/article/details/89330468
+instanceof 的原理是什么  
+https://blog.csdn.net/sinat_17775997/article/details/89330468  

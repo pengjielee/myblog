@@ -12,7 +12,7 @@ function uniqueArr(arr) {
 }
 ```
 
-## 先排序后然后再相邻比较去重
+## 先排序然后再相邻比较去重
 
 ```
 function uniqueArr(arr) {

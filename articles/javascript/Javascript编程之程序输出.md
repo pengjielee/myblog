@@ -45,7 +45,7 @@ console.log(typeof(NaN)) //number
 
 var str = '12345f'
 console.log(typeof(str)) //string
-console.log(typeof(str++)) //number
+console.log(typeof(str++)) //number，console.log(str++);//NaN
 ```
 
 5、
@@ -114,6 +114,6 @@ add()();//3, window作用域下,this是window
 object.add()()//4, window作用域下,this是window
 ```
 
-# More
+## More
 
 [https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true](https://stackoverflow.com/questions/48270127/can-a-1-a-2-a-3-ever-evaluate-to-true)

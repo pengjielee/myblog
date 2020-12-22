@@ -2,7 +2,7 @@
 
 防抖技术即是可以把多个顺序地调用合并成一次，也就是在一定时间内，规定事件被触发的次数。
 
-~~~
+```
 // 简单的防抖动函数
 function debounce(func, wait, immediate) {
   // 定时器变量
@@ -40,7 +40,7 @@ function debounce(func, wait, immediate) {
       if (callNow) func.apply(context, args);
   };
 };
-~~~
+```
 
 ### 节流（Throttling）
 
@@ -49,7 +49,7 @@ function debounce(func, wait, immediate) {
 与防抖相比，节流函数最主要的不同在于它保证在X毫秒内至少执行一次我们希望触发的事件handler。
 节流函数多了一个mustRun属性，代表mustRun毫秒内，必然会触发一次 handler。
 
-~~~
+```
 // 简单的节流函数
 function throttle(func, wait, mustRun) {
   var timeout,startTime = new Date();
@@ -76,10 +76,10 @@ function realFunc(){
 }
 // 采用了节流函数
 window.addEventListener('scroll',throttle(realFunc,500,1000));
-~~~
+```
 
+## More 
 
-参考：  
 [如何不择手段提升scroll事件的性能](https://zhuanlan.zhihu.com/p/30078937?group_id=903286564285767680)  
 https://zhuanlan.zhihu.com/p/30078937?group_id=903286564285767680
 

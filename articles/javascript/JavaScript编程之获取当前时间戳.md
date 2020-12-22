@@ -7,7 +7,6 @@ var timestamp = Date.parse(new Date());
 结果：1280977330000
 ```
 
-
 ## 第二种方法：
 
 ```
@@ -18,7 +17,7 @@ var timestamp = (new Date()).valueOf();
 ## 第三种方法：
 
 ```
-var timestamp=new Date().getTime()；
+var timestamp = new Date().getTime()；
 结果：1280977330748
 ```
 

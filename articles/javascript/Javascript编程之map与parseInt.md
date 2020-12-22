@@ -1,4 +1,5 @@
 ## 题目
+
 ```
 ['1','2','3'].map(parseInt) // [1,NaN,NaN]
 
@@ -10,7 +11,6 @@
 ['1','2','3'].map(function(item,index){
 	return parseInt(item,10);
 }) // [1,2,3]
-
 ```
 
 ## array.map(function(currentValue,index,arr), thisValue)
@@ -26,7 +26,6 @@ thisValue可选。对象作为该执行回调时使用，传递给函数，用�
 },{ "a": 10 })
 ```
 
-
 ## parseInt()函数可解析一个字符串，并返回一个整数。  
 
 parseInt(string, radix)   
@@ -37,8 +36,12 @@ radix	可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。
 如果它以 “0x” 或 “0X” 开头，将以16为基数。  
 如果该参数小于2或者大于36，则parseInt()将返回NaN。  
 
-# More
+## More
+
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)  
+
 [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)  
-[http://www.runoob.com/jsref/jsref-map.html](http://www.runoob.com/jsref/jsref-map.html)       
+
+[http://www.runoob.com/jsref/jsref-map.html](http://www.runoob.com/jsref/jsref-map.html)    
+   
 [http://www.w3school.com.cn/jsref/jsref_parseInt.asp](http://www.w3school.com.cn/jsref/jsref_parseInt.asp)   

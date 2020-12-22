@@ -1,7 +1,8 @@
 JavaScript有5种简单数据类型：Undefined、Null、Boolean、Number和String。还有1种复杂数据类型：Object。
 
 ## 判断数组
-~~~
+
+```
 function isArray( value ){
 	return Object.prototype.toString.call(value) === '[object Array]'
 }
@@ -12,10 +13,11 @@ function isArray( value ){
 
 isArray([]); //true
 isArray(new Array(2)); //true
-~~~
+```
 
 ## 判断函数
-~~~
+
+```
 function isFunction( value ){
 	return typeof value === 'function';
 }
@@ -25,16 +27,16 @@ function isFunction( value ){
 }
 
 isFunction(function(){}); //true
-~~~
+```
 
 ## 判断对象
-~~~
+
+```
 function isObject( value ){
 	return value != null && ( typeof value === 'object' || typeof value === 'function' )
 }
 
 isObject({}); //true
-
 
 // 空对象，不包括任何可枚举(自定义)的属性。
 function isEmptyObject( value ){
@@ -63,11 +65,11 @@ isEmptyObject(null); //true
 
 如果要迭代的对象变量是null 或undefined的话，for-in语句会抛出错误，ECMAScript5更正了这一行为，对这种情况不在抛出错误，而是不执行循环体。
 为了保证最大限度的兼容性，建议在使用for-in循环之前，先检测确认该对象的值不是null或undefined.
-~~~
-
+```
 
 ## 判断数字
-~~~
+
+```
 function isNumber( value ){
 	return typeof value === 'number' || Object.prototype.toString.call(value) === '[object Number]';
 }
@@ -86,9 +88,8 @@ function isNaN( value ){
 	return value !== value;  
 }
 
-isNaN(42);	//fasle
+isNaN(42);	//false
 isNaN(NaN); //true
-
 
 //es6
 function isFinite(value) {
@@ -122,19 +123,21 @@ function isSafeInteger (value) {
 
 isSafeInteger(42); //true
 isSafeInteger(9007199254740992);//false
-~~~
+```
 
 ## 判断日期
-~~~
+
+```
 function isDate( value ){
 	return Object.prototype.toString.call(value) === '[object Date]'
 }
 
 isDate(new Date()); //true
-~~~
+```
 
 ## 判断字符串
-~~~
+
+```
 function isString( value ){
 	return typeof value === 'string';
 }
@@ -145,21 +148,22 @@ function isString( value ){
 
 isString('12'); //true
 isString(12); //false
-~~~
+```
 
 ## 判断正则
-~~~
+
+```
 function isRegExp( value ){
 	return Object.prototype.toString.call(value) === '[object RegExp]'
 }
 
 isRegExp(/abc/); //true
 isRegExp('/abc/'); false
-~~~
-
+```
 
 ## typeof
-~~~
+
+```
 typeof(a)              // undefined
 typeof(true)           // boolean
 typeof("1")            // string
@@ -172,10 +176,11 @@ typeof(new RegExp())   // object
 typeof(new Date())     // object
 typeof(new Array())    // object
 typeof([])             // object
-~~~
+```
 
 ## Object.prototype.toString.call(value)
-~~~
+
+```
 Object.prototype.toString.call(a)             // Uncaught ReferenceError: a is not defined
 Object.prototype.toString.call(true) 					// '[object Boolean]'
 Object.prototype.toString.call('1') 					// '[object String]'
@@ -188,4 +193,4 @@ Object.prototype.toString.call(new RegExp())  // '[object RegExp]'
 Object.prototype.toString.call(new Date())    // '[object Date]'
 Object.prototype.toString.call(new Array())   // '[object Array]'
 Object.prototype.toString.call([])            // '[object Array]'
-~~~
+```
