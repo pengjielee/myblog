@@ -25,7 +25,7 @@
 
 队列的“假溢出“： 
 
-~~~
+```
 // 实现队列
 class Queue {
 	constructor(){
@@ -88,7 +88,9 @@ peopels.enqueue('tom');
 peopels.enqueue('jack');
 
 peopels.print(); // jim,tom,jack
-~~~
+```
+
+## More 
 
 队列原理
 https://blog.csdn.net/zhongguozhichuang/article/details/53196415

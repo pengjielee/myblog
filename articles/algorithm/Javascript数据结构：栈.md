@@ -8,7 +8,7 @@
 1. 入栈；
 2. 出栈；
 
-~~~
+```
 function Stack() {
   this.dataStorage = [];
   this.top = 0;
@@ -49,4 +49,4 @@ console.log(stack.pop());
 
 stack.clear();
 console.log(stack.length());
-~~~
+```

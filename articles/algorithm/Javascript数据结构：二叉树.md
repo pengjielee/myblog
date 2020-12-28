@@ -1,11 +1,11 @@
 ## 二叉树：每个节点最多有两个子节点。
-~~~
+```
 	  10
 	/    \
 	9    20
 			/   \
 	   15   35
-~~~
+```
 
 ## 二叉树的特点：
 1. 每个节点最多有两个子树，节点的度最大为2；
@@ -93,7 +93,7 @@ d. 同样节点树的二叉树，完全二叉树的深度最小（满二叉树�
 17. 二分查找树转化为排序的循环双链表；
 18. 有序链表转化为平衡的二分查找树。
 
-~~~
+```
 class TreeNode {
 	constructor(data) {
     this.data = data;
@@ -335,9 +335,9 @@ class BinarySearchTree {
     return true;
   }
 }
-~~~
+```
 
-~~~
+```
 // 给出 n，问由 1...n 为节点组成的不同的二叉查找树有多少种？ ???
 // function numberOfTrees(n){
 //   var counts = [];
@@ -400,10 +400,10 @@ console.log(isBST);  // true
 var isBalanceTree = BST.isBalanceTree(root);
 console.log(isBalanceTree);
 
-~~~
+```
 
 ## 二叉树确定
-~~~
+```
 class TreeNode {
 	constructor(data) {
     this.data = data;
@@ -526,7 +526,7 @@ class BinarySearchTree {
   	}
   }
 }
-~~~
+```
 
 //前序（根->左->右）
 //中序（左->根->右）
@@ -537,7 +537,7 @@ class BinarySearchTree {
 
 //已知前序和后序，为什么不能唯一确定一棵二叉树？
 
-~~~
+```
 var BST = new BinarySearchTree();
 BST.insert(15);
 BST.insert(25);
@@ -561,7 +561,7 @@ BST.inorder(root); // 7 10 13 (15) 22 25
 
 console.log('后序');//（左->右->根）
 BST.postorder(root); // 7 13 10 22 25 15 
-~~~
+```
 
 1) 由前序得出：
    根节点： 15
@@ -570,13 +570,13 @@ BST.postorder(root); // 7 13 10 22 25 15
 2) 由中序得出：
    左子树节点 - 根节点 - 右子树节点
    （7 10 13）- 15 -（22 25）
-~~~
+```
 //       15
 //      /   \
 //    10     25
 //   /  \    /
 //  7   13  22
-~~~
+```
 
 3) 由后序得出：
    根节点： 15
