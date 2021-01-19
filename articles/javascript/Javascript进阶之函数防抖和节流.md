@@ -1,4 +1,4 @@
-### 防抖（Debouncing）
+## 防抖（Debouncing）
 
 防抖技术即是可以把多个顺序地调用合并成一次，也就是在一定时间内，规定事件被触发的次数。
 
@@ -42,7 +42,7 @@ function debounce(func, wait, immediate) {
 };
 ```
 
-### 节流（Throttling）
+## 节流（Throttling）
 
 节流函数：只允许一个函数在X毫秒内执行一次，只有当上一次函数执行后过了你规定的时间间隔，才能进行下一次该函数的调用。
 
