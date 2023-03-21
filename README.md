@@ -1,8 +1,3 @@
-## Git仓库
-
-git@github.com:pengjielee/blog.me.git
-
-
 ## JavaScript基础
 
 - [JavaScript基础之类型判断](https://github.com/pengjielee/blog/issues/1)  
